@@ -12,10 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Unzip project
-        run: |
-          unzip -o DhankAI_Android_Project.zip -d project
-          ls project
+      - - name: Unzip project
+  run: unzip -o path/to/YourActualName.zip -d project
+          
 
       - name: Set backend URL (optional)
         env:
